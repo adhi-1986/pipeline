@@ -4,6 +4,9 @@ on:
   banch  main
 jobs:
   build
+    runs-on : ubuntu-latest
     steps
       - name : code checkout
-        uses : checkout/version@2
+        uses : actions/checkout@v2
+      -name : java install
+         uses : actions/java@v2
